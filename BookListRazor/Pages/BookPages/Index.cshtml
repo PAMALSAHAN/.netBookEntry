@@ -1,0 +1,66 @@
+﻿@page
+@model BookListRazor.BookPages.IndexModel
+@{
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <h1 class="text-info">Book List</h1>
+            <div class="card-body" >
+                @if (Model.IBook.Count() == 0)
+                {
+                    <div class="form-text"> There is no any Data</div>
+                }
+                else
+                {
+
+                    <table class="table table-striped border">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <label asp-for="IBook.FirstOrDefault().Name"></label>
+                                </th>
+                                <th>
+                                    <label asp-for="IBook.FirstOrDefault().Author"></label>
+                                    @*@Html.DisplayNameFor(m=>m.IBook.FirstOrDefault().Name) html helper*@
+                                </th>
+                            </tr>
+                            
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.IBook)
+                            {
+                            <tr onclick="location.href = '@Html.ActionLink("Edit", "Edit", new { id=item.Id }))'">
+                                <td>
+                                    @Html.DisplayFor(x => item.Name)
+
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(x => item.Author)
+                                </td>
+                                <td>
+                                   <a class="btn btn-danger btn-sm" >Delete</a>
+                                    <a class="btn btn-success btn-sm text-white">Edit</a>
+                                </td>
+                            </tr>
+                                            
+                            }
+                        </tbody>
+                    </table>
+                }
+                
+            </div>
+        </div>
+        <div class="col-3 mt-2">
+            <div class="row mt-5  mb-1">
+                <a asp-page="Create" class="btn btn-info form-control ">Create New Book</a>
+
+            </div>
+           
+
+        </div>
+
+    </div>
+       
+</div>

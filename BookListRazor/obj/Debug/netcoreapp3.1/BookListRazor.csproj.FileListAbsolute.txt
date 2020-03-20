@@ -742,3 +742,4 @@ F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\n
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.pdb
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\Razor\Pages\BookPages\Index.cshtml.g.cs
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_vensoLayout.cshtml.g.cs
+F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\Razor\Pages\BookPages\Create.cshtml.g.cs

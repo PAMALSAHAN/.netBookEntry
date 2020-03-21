@@ -22,5 +22,8 @@ namespace BookListRazor.Pages.BookPages
         public void OnGet()
         {
         }
+
+        // submit karapuwa ekiyanne data allaganna ekak hadanna one
+        
     }
 }

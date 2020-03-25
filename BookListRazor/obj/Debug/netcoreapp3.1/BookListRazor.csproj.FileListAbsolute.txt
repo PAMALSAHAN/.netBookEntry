@@ -715,7 +715,6 @@ F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\bin\Debug\n
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.csprojAssemblyReference.cache
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\staticwebassets\BookListRazor.StaticWebAssets.Manifest.cache
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\staticwebassets\BookListRazor.StaticWebAssets.xml
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.MvcApplicationPartsAssemblyInfo.cs
@@ -743,3 +742,4 @@ F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\n
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\Razor\Pages\BookPages\Index.cshtml.g.cs
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_vensoLayout.cshtml.g.cs
 F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\Razor\Pages\BookPages\Create.cshtml.g.cs
+F:\pamal\pamal\udemy\c#\.netcoreASP\work\.netBookEntry\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.csprojAssemblyReference.cache

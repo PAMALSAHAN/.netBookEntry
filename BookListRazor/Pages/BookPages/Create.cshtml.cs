@@ -18,12 +18,32 @@ namespace BookListRazor.Pages.BookPages
             _db = db;
         }
         // ita passe tinne model ekak hadana eka
+        [BindProperty] // 
         public Book Cbook { get; set; } // methana Cbook kiyanne model eka 
         public void OnGet()
         {
         }
 
         // submit karapuwa ekiyanne data allaganna ekak hadanna one
+        public async Task<IActionResult> OnPost() // event handler eka hadanakota hadanne mehemai on kiyana eka danna one
+        {
+            // api meka dan submit karama eka db ekaka save wenna one itin parameter eka vidihata book obj ekak yawanna one 
+            // bt core wala tinawa bind property eken uda tina property eka bind karala ganna puluwan
+            if (ModelState.IsValid)
+            {
+              
+                await _db.BookModelProperty.AddAsync(Cbook);// methana danna one book model eken hadapu eka 
+                // maka hariyata nikan read ekak wage thama db ekata watila naha eka hinda 
+                await _db.SaveChangesAsync();
+               
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page(); // page ekema tiyagannawa 
+            }
+
+        }
         
     }
 }

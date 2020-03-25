@@ -2,31 +2,36 @@
 @model BookListRazor.Pages.BookPages.CreateModel
 
 <h1 class="text-info">Create Book List</h1>
-<div class="container">
+<div class="border container" style="padding:30px;">
     <form method="post">
+
+        <div class="txt-danger" asp-validation-summary="ModelOnly"></div>
         <div class="form-group row">
-            <div class="col-4">
-                <label asp-for="Cbook.Name"></label>
+            <div class="col-3" >
+                <label asp-for="Cbook.Name" ></label>
             </div>
-            <div class="col-6">
+            <div class="col-5">
                 <input asp-for="Cbook.Name" class="form-control" />  @*menna mehemai binding karanne eka lesi*@
             </div>
+            <span asp-validation-for="Cbook.Name" class="txt-danger" ></span>
         </div>
         <div class="form-group row">
-            <div class="col-4">
+            <div class="col-3">
                 <label asp-for="Cbook.Author"></label>
             </div>
-            <div class="col-6">
+            <div class="col-5">
                 <input asp-for="Cbook.Author" class="form-control" />  @*menna mehemai binding karanne eka lesi*@
             </div>
+            <span asp-validation-for="Cbook.Author"></span>
         </div>
         <div class="form-group row">
-            <div class="col-4">
+            <div class="col-3">
                 <label asp-for="Cbook.ISBN"></label>
             </div>
-            <div class="col-6">
+            <div class="col-5">
                 <input asp-for="Cbook.ISBN" class="form-control" />  @*menna mehemai binding karanne eka lesi*@
             </div>
+            <span asp-validation-for="Cbook.ISBN"></span>
         </div>
         <div class="form-group row offset-4">
             <div class="col-3 ">
@@ -40,3 +45,6 @@
     </form>
 </div>
 
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />  @*meken thamai server side validation eka karanne*@
+}

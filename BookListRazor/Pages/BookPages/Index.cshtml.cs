@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 //Book Pages Folder
 namespace BookListRazor.BookPages
 {
-    public class IndexModel : PageModel 
+    public class IndexModel : PageModel
     {
         //db ekka connec eka hadaganna tinne
         public readonly AppDbContext _db;
@@ -22,11 +22,26 @@ namespace BookListRazor.BookPages
 
         }
 
+        
         public IEnumerable<Book> IBook { get; set; }   //for loop ekak yanna one nisa 
 
         public async Task OnGet() // mathana get kiyanne handler ekak 
         {
             IBook = await _db.BookModelProperty.ToListAsync();  //table eken list ekata dagannawa BookModelProperty kiyanne table name eka
+        }
+
+
+        public async Task<IActionResult> OnPostDelete(int id)
+        {
+            var book = await _db.BookModelProperty.FindAsync(id);
+            if (book == null)
+            {
+                return NotFound();
+            }
+            _db.BookModelProperty.Remove(book);
+            await _db.SaveChangesAsync();
+
+            return RedirectToPage("Index");
         }
     }
 }
